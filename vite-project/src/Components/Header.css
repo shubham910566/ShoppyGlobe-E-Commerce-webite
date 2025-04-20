@@ -1,0 +1,131 @@
+/* src/Components/Header.css */
+.header {
+  background: linear-gradient(90deg, #f5af19, #f12711);
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.dark .header {
+  background: linear-gradient(90deg, #333, #444);
+}
+
+.header-title {
+  font-size: 2rem;
+  margin: 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.header-link {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.header-link:hover {
+  color: #e0e0e0;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #e0e0e0;
+  transform: scale(1.05);
+}
+
+.nav-link:focus {
+  outline: 2px solid #e0e0e0;
+  outline-offset: 2px;
+}
+
+.dark-mode-toggle {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid #e0e0e0;
+  border-radius: 50%;
+  color: white;
+  font-size: 1.8rem;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+  z-index: 1001;
+}
+
+.dark-mode-toggle:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: scale(1.2);
+}
+
+.dark-mode-toggle:focus {
+  outline: 2px solid #e0e0e0;
+  outline-offset: 2px;
+}
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    padding: 15px;
+    gap: 15px;
+  }
+
+  .header-title {
+    font-size: 1.8rem;
+  }
+
+  .header-nav {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .nav-link {
+    font-size: 1.1rem;
+  }
+
+  .dark-mode-toggle {
+    font-size: 1.5rem;
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media (max-width: 400px) {
+  .header {
+    padding: 10px;
+  }
+
+  .header-title {
+    font-size: 1.6rem;
+  }
+
+  .nav-link {
+    font-size: 1rem;
+  }
+
+  .dark-mode-toggle {
+    font-size: 1.3rem;
+    width: 30px;
+    height: 30px;
+  }
+}

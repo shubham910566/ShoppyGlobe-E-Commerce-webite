@@ -1,0 +1,130 @@
+/* Styling for the ProductDetails component */
+.product-details {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .product-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #222;
+    text-align: center;
+  }
+  
+  .product-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 25px;
+    border-radius: 10px;
+  }
+  
+  .product-description {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .product-price {
+    font-size: 1.3rem;
+    color: #e91e63;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .product-price span {
+    color: #2c3e50;
+  }
+  
+  .product-brand,
+  .product-category,
+  .product-rating,
+  .product-stock {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 8px;
+  }
+  
+  .loading,
+  .error {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #888;
+    margin-top: 40px;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 600px) {
+    .product-details {
+      max-width: 90%;
+      margin: 20px auto;
+      padding: 20px;
+    }
+  
+    .product-title {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+    }
+  
+    .product-image {
+      margin-bottom: 20px;
+    }
+  
+    .product-description {
+      font-size: 1rem;
+      margin-bottom: 15px;
+    }
+  
+    .product-price {
+      font-size: 1.2rem;
+    }
+  
+    .product-brand,
+    .product-category,
+    .product-rating,
+    .product-stock {
+      font-size: 0.95rem;
+    }
+  
+    .loading,
+    .error {
+      font-size: 1.1rem;
+      margin-top: 30px;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .product-details {
+      padding: 15px;
+    }
+  
+    .product-title {
+      font-size: 1.6rem;
+    }
+  
+    .product-description {
+      font-size: 0.9rem;
+    }
+  
+    .product-price {
+      font-size: 1.1rem;
+    }
+  
+    .product-brand,
+    .product-category,
+    .product-rating,
+    .product-stock {
+      font-size: 0.9rem;
+    }
+  
+    .loading,
+    .error {
+      font-size: 1rem;
+    }
+  }
