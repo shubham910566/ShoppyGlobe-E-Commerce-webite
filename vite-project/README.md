@@ -52,6 +52,9 @@ src/
 
 ---
 
+# Live Demo
+https://shoppy-globe-e-commerce-webite-jsjs.vercel.app/
+
 ## ⚙️ Key Functionality
 
 ### 🔁 Routing
